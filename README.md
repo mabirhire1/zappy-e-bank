@@ -194,3 +194,51 @@ Ensure that the user can access the AWS Management Console. If this is not selec
 * Perform S3 Actions: Attempt to create a new S3 instance or modify an existing one to confirm that Mary has the necessary permissions. If Mary can successfully perform these actions, it indicates her IAM user has been correctly set up with the appropriate policies for a data analysts.
 
 ![S3 Bucket](img/image36.png)
+
+4. Setting Up MFA for John
+
+* Click on User and then click on john. It is assumed we already created a user account for john
+
+![IAM User](img/image37.png)
+
+* Click on enable MFA as shown in the image below
+![MFA Device](img/image38.png)
+
+* Enter a device name for john MFA and select authenticator app
+
+![MFA Device](img/image39.png)
+
+
+Note: You should install authenticator app like Google authenticator or microsoft authenticator on your mobile device if you don't have it installed.
+
+Click on Next
+
+Open your Google authenticator or microsoft authenticator application on your mobile device to scan the QR Code, then you can fill in the 2 consecutive codes as shown in the image below
+
+![Authenticator App](img/image41.png)
+
+By completing step 1-5, MFA will be enabled for John.
+
+5. Setting Up MFA for Mary
+
+* Click on User and then click on Mary. It is assumed we already created a user account for Mary.
+
+![IAM User](img/image42.png)
+
+* Click on enable MFA as shown in the image below
+![MFA Device](img/image43.png)
+
+* Enter a device name for Mary MFA and select authenticator app
+
+![MFA Device](img/image44.png)
+
+Note: You should install authenticator app like Google authenticator or microsoft authenticator on your mobile device if you don't have it installed.
+
+Click on Next
+
+Open your Google authenticator or microsoft authenticator application on your mobile device to scan the QR Code, then you can fill in the 2 consecutive codes as shown in the image below
+
+![Authenticator App](img/image45.png)
+
+By completing step 1-5, MFA will be enabled for Mary.
+
